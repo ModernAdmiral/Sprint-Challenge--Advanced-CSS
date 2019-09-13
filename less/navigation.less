@@ -1,1 +1,20 @@
 // Navigation code here
+.title-container {
+    background-color: @nav-bg;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    h1 {
+        font-size: 4rem;
+        padding: 1.25rem;
+    }
+    nav {
+        .default-nav();
+        a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            padding: 1rem 1.6rem;
+            color: @nav-font;
+        }
+    }
+}
