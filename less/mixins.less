@@ -1,1 +1,21 @@
 // Mixins Here
+
+.img-props(@img-width, @img-bd-rad, @img-margin) {
+    border-radius: @img-bd-rad;
+    height: 100%;
+    width: @img-width;
+    margin: @img-margin;
+}
+
+.default-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-up-button(@btn-padding, @btn-bg-color, @btn-text-color) {
+    background-color: @btn-bg-color;
+    font-size: 1.5rem;
+    padding: @btn-padding;
+    color: @btn-text-color;
+    border-radius: 5px;
+}
